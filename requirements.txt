@@ -1,9 +1,9 @@
-Django==5.0
-mysql-connector-python==8.2.0
-virtualenv==20.25.0
+Django==3.2.23
+mysql-connector-python==8.0.33
+virtualenv==20.24.7
 dj-database-url==2.1.0
 gunicorn==21.2.0
 psycopg2-binary==2.9.9
-whitenoise==6.6.0
-Pillow==10.2.0
+whitenoise==6.5.0
+Pillow==9.5.0
 requests==2.31.0
