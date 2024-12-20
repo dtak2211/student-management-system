@@ -1,9 +1,14 @@
 [build]
-  command = "python manage.py collectstatic --noinput"
+  base = "."
+  command = """
+    python -m pip install --upgrade pip &&
+    pip install -r requirements.txt &&
+    python manage.py collectstatic --noinput
+  """
   publish = "staticfiles"
 
 [build.environment]
-  PYTHON_VERSION = "3.12.0"
+  PYTHON_VERSION = "3.8.12"
 
 [[redirects]]
   from = "/*"
