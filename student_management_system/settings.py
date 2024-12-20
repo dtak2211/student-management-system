@@ -94,7 +94,7 @@ WSGI_APPLICATION = 'student_management_system.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='sqlite:///' + str(BASE_DIR / 'db.sqlite3'),
+        default='postgresql://postgres:UoqSWiuavlLXgQllWTFAbhNNIUKfVRde@autorack.proxy.rlwy.net:50314/railway',
         conn_max_age=600
     )
 }
