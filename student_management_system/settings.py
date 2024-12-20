@@ -31,7 +31,11 @@ DEBUG = os.environ.get('DJANGO_DEBUG', 'True') == 'True'
 ALLOWED_HOSTS = ['*']
 
 # Add CSRF trusted origins
-CSRF_TRUSTED_ORIGINS = ['https://*.netlify.app']
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.up.railway.app',
+    'http://localhost:8000',
+    'http://127.0.0.1:8000',
+]
 
 # Application definition
 
